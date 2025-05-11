@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    justify-content: center;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+header span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #444;
+    padding: 0.5rem 1rem;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+    background-color: #666;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.sections-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.sections-row section:first-child {
+    flex: 2;
+}
+
+.sections-row section:last-child {
+    flex: 1;
+
+}
+
+.sections-row img {
+    width: 25%;
+}
+
+section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    flex: 1 1 48%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    justify-content: center;
+}
+
+section img {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+
+.coursework {
+    margin-top: 1rem;
+    padding-left: 1.25rem;
+}
+
+.coursework li {
+    margin-bottom: 0.5rem;
+}
+
+
+ul.Resources a {
+    text-decoration: none;
+    color: #0077cc;
+}
+
+ul.Resources a:hover,
+ul.Resources a.active {
+    text-decoration: underline;
+    color: #005fa3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .sections-row {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
