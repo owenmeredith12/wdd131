@@ -107,20 +107,19 @@ h1 {
 }
 
 .sections-row img {
-    width: 25%;
+    width: 150px;
 }
 
 section {
     background: white;
     padding: 1.5rem;
     border-radius: 8px;
-    flex: 1 1 48%;
+    flex: 1 1 50%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     justify-content: center;
 }
 
 section img {
-    width: 100%;
     border-radius: 6px;
     margin-top: 1rem;
 }
