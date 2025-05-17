@@ -9,6 +9,11 @@
         margin-bottom: 2rem;
     }
 
+    h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
     header {
         background-color: #2c3e50;
         color: white;
@@ -35,41 +40,45 @@
     .nav-toggle {
         display: block;
     }
-}
 
-.nav-menu.show {
-    display: flex;
-}
+    .nav-menu.show {
+        display: flex;
+    }
 
 
-.nav-menu li a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
+    .nav-menu li a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
 
-.nav-menu li a:hover {
-    background-color: black;
-}
+    .nav-menu li a:hover {
+        background-color: black;
+    }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    nav a:hover{
+        
+    }
 
-}
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
 
-figure {
-    padding: 0.5rem;
-    text-align: center;
-}
+    }
 
-figure img {
-    height: auto;
-    display: block;
-}
+    figure {
+        padding: 0.5rem;
+        text-align: center;
+    }
 
-footer {
-    justify-items: center;
+    figure img {
+        height: auto;
+        display: block;
+    }
+
+    footer {
+        justify-items: center;
+    }
 }
