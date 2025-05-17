@@ -1,4 +1,4 @@
-@media (max-width:640px) {
+@media (max-width:768px) {
     main {
         display: flex;
         flex-direction: column;
@@ -9,19 +9,67 @@
         margin-bottom: 2rem;
     }
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-
+    header {
+        background-color: #2c3e50;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
     }
 
-    figure {
-        padding: 0.5rem;
-        text-align: center;
+    .navbar {
+        position: relative;
     }
 
-    figure img {
-        height: auto;
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #2c3e50;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+    }
+
+    .nav-toggle {
         display: block;
     }
+}
+
+.nav-menu.show {
+    display: flex;
+}
+
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu li a:hover {
+    background-color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+figure {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+figure img {
+    height: auto;
+    display: block;
+}
+
+footer {
+    justify-items: center;
 }
