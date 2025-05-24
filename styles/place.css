@@ -49,6 +49,31 @@ picture img {
     margin-left: 0.5rem;
 }
 
+:root {
+    --weather-icon: url("../images/day.svg"; )
+}
+
+.weather h2::after {
+    content: "";
+    display: inline-block;
+    background-image: url("../images/day.svg");
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
 footer {
     justify-items: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .data,
+    .weather {
+        position: static;
+        margin: 1rem auto;
+        width: 90%;
+    }
 }
