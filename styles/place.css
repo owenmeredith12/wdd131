@@ -50,7 +50,7 @@ picture img {
 }
 
 :root {
-    --weather-icon: url("../images/day.svg"; )
+    --weather-icon: url("../images/day.svg" );
 }
 
 .weather h2::after {
