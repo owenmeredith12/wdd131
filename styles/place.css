@@ -52,7 +52,7 @@ picture img {
 :root {
     --weather-icon: url("../images/day.svg");
     --primary7-accent-color: black;
-    --header-font-size: 1.8rm;
+    --header-font-size: 1.8rem;
 }
 
 .weather h2::after {
