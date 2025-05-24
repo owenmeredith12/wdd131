@@ -50,13 +50,15 @@ picture img {
 }
 
 :root {
-    --weather-icon: url("../images/day.svg" );
+    --weather-icon: url("../images/day.svg");
+    --primary7-accent-color: black;
+    --header-font-size: 1.8rm;
 }
 
 .weather h2::after {
     content: "";
     display: inline-block;
-    background-image: url("../images/day.svg");
+    background-image: url(--weather-icon);
     background-size: contain;
     width: 24px;
     height: 24px;
@@ -75,5 +77,10 @@ footer {
         position: static;
         margin: 1rem auto;
         width: 90%;
+    }
+
+    .weather h2 {
+        color: var(--primary-accent-color);
+        font-size: var(--header-font-size);
     }
 }
