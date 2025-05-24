@@ -1,0 +1,54 @@
+header {
+    justify-items: center;
+    background-color: gray;
+    padding: 20px;
+}
+
+main img {
+    width: 90%;
+}
+
+picture img {
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+
+.data,
+.weather {
+    position: absolute;
+    top: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 4px;
+    max-width: 250px;
+    font-size: 0.95rem;
+}
+
+.data {
+    left: 2%;
+}
+
+.weather {
+    right: 2%;
+}
+
+.data h2,
+.weather h2 {
+    background-color: #00704A;
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.weather h2 img {
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+footer {
+    justify-items: center;
+}

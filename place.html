@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Owen Meredith - WDD131 - This is the home page">
+    <meta name="author" content="Owen Meredith">
+    <title>WDD 131 – Dynamic Web Fundamentals – Owen Meredith</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Japan</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source srcset="images/hero-large.jpg" media="(min-width: 1000px)">
+            <source srcset="images/hero-medium.jpg" media="(min-width: 550px)">
+            <img src="images/hero-small.jpg" alt="Picture of japan">
+        </picture>
+
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 145,869 sq km</li>
+                <li><strong>Population:</strong> 124,500,000</li>
+                <li><strong>Capital:</strong> Tokyo</li>
+                <li><strong>Languages:</strong> Japansese</li>
+                <li><strong>Currency:</strong> Japanese Yen</li>
+                <li><strong>Time Zone:</strong> Japan Standard Time</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather <img src="images/weather-icon.png" alt="Weather Icon" /></h2>
+            <ul id="weather">
+                <!-- <li><strong>Temperature:</strong> 10 °C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> 5 km/h</li>
+                <li><strong>Wind Chill:</strong> 9.8 °C</li> -->
+            </ul>
+    </main>
+
+    <footer>
+        <p>©️2025 | Owen Meredith | UT</p>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
